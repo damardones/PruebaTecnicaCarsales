@@ -29,3 +29,12 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background-
   .button-row{
     display: initial;
   }
+
+  .mat-stroked-button{
+    border: 2px solid #21cf27
+  }
+
+  .mat-card-actions .mat-button:first-child, .mat-card-actions .mat-raised-button:first-child, .mat-card-actions .mat-stroked-button:first-child{
+    border:inset;
+    border-color: #21cf27;
+  }
