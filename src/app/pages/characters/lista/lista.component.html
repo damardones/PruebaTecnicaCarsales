@@ -1,0 +1,8 @@
+<mat-grid-list [cols]="columns" rowHeight="550px" (window:resize)="onResize($event)">    
+    <div *ngFor="let item of dataSource"> 
+        <mat-grid-tile>
+            <app-card [character]="item"></app-card>  
+        </mat-grid-tile>                                       
+    </div>          
+</mat-grid-list>
+<br>

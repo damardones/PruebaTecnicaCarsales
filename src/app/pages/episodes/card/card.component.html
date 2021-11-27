@@ -1,0 +1,14 @@
+<mat-card class="card">
+    <mat-card-header>
+        <mat-card-title>{{episode.name}}</mat-card-title>
+        <mat-card-subtitle>{{episode.episode}}</mat-card-subtitle>
+    </mat-card-header>
+    <img class="img-card" mat-card-image src="{{randomImage}}" alt="">
+    <mat-card-content>
+        <p>The episode {{episode.name}} was released in {{episode.air_date}}</p>
+    </mat-card-content>
+    <mat-card-actions>
+        <button mat-stroked-button (click)="showCharacters('characters')">CHARACTERS</button>
+        <button mat-stroked-button>LOCATIONS</button>
+    </mat-card-actions>
+</mat-card>

@@ -1,0 +1,42 @@
+.container  {
+    padding: 16px;
+    text-align: center;
+    display: inline-block;
+}
+  section {
+    display: table;
+    text-align: center;
+  }
+
+  .section {
+    display: table;
+    text-align: center;
+    margin: auto;
+  }
+  
+  .label {
+    display: table-cell;
+    font-size: 18px;
+    margin-left: 8px;
+    min-width: 120px;
+    color: #fff;
+  }
+  
+  .button-row {  
+    width: 490px;
+  }
+  
+  .button-row .mat-button-base {
+    margin: 8px 8px 8px 0;
+  }
+  
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+    width: 120px;
+  }

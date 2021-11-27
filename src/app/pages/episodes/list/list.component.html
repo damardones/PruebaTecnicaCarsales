@@ -1,0 +1,25 @@
+<mat-grid-list [cols]="columns" rowHeight="425px" (window:resize)="onResize($event)">    
+    <div *ngFor="let item of dataSource"> 
+        <mat-grid-tile>
+            <app-card [episode]="item"></app-card>  
+        </mat-grid-tile>                                       
+    </div>          
+</mat-grid-list>
+<br>
+<mat-divider></mat-divider>
+<br>
+<section class="section">
+    <div class="label">Page {{actualPage}} of {{info.pages}}</div>
+    <div class="button-row">
+        <div class="flex-container">
+        <button (click)="previusPage()" mat-icon-button>
+            <mat-icon>chevron_left</mat-icon>
+        </button>
+        <button (click)="nextPage()" mat-icon-button>
+            <mat-icon>chevron_right</mat-icon>
+        </button>
+        </div>
+    </div>
+</section>
+
+

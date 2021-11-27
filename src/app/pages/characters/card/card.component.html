@@ -1,0 +1,15 @@
+<mat-card class="card">
+    <img class="img-card" mat-card-image src="{{character.image}}" alt="">
+    <mat-card-header>
+        <mat-card-title>{{character.name}}</mat-card-title>        
+    </mat-card-header>
+    <mat-divider></mat-divider>
+    <br>
+    <mat-card-content>
+        <p>Status: {{character.status}}</p>
+        <p>Species: {{character.species}}</p>
+        <p>Gender: {{character.gender}}</p>
+        <p>Origin: {{character.origin.name}}</p>
+    </mat-card-content>
+</mat-card>
+
